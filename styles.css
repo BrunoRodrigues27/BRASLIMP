@@ -1,0 +1,176 @@
+/* Estilo geral para todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total dos elementos */
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 0; /* Preenchimento superior e inferior */
+}
+
+/* Estilo do título do cabeçalho */
+header h1 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+/* Estilo da navegação */
+nav {
+    margin: 10px 0; /* Margem vertical */
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+    list-style: none; /* Remove marcadores de lista */
+}
+
+/* Estilo dos links do menu */
+nav ul li {
+    margin: 0 15px; /* Margem lateral entre os itens */
+}
+
+nav a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    color: #FFD700; /* Altera a cor ao passar o mouse */
+}
+
+/* Estilo da seção hero */
+.hero {
+    background-color: #606366; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 0; /* Preenchimento superior e inferior */
+    box-shadow: 0PX 0PX 20PX;
+}
+
+/* Estilo da seção de serviços */
+#servicos {
+    padding: 20px; /* Preenchimento interno */
+    background-image: url('imagens/fundo-empresa.jpg');
+}
+
+#servicos > h2 {
+    color: #f4f4f4;
+}
+
+/* Estilo do container de serviços */
+.servico-container {
+    display: flex; /* Exibe os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: space-around; /* Espaça os itens */
+}
+
+/* Estilo de cada serviço */
+.servico {
+    background: white; /* Cor de fundo branca */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px; /* Margem entre os serviços */
+    padding: 15px; /* Preenchimento interno */
+    width: 30%; /* Largura dos serviços */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+/* Efeito ao passar o mouse sobre cada serviço */
+.servico:hover {
+    transform: translateY(-5px); /* Eleva o serviço ao passar o mouse */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda do botão */
+    padding: 10px 15px; /* Preenchimento interno do botão */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo da seção sobre a empresa */
+#sobre {
+    background-color: #606366;
+    color: white; /* Cor da fonte */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0PX 0PX 20PX; /* Sombra */
+}
+
+/* Estilo da seção de contato */
+#contato {
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex; /* Exibe os itens em linha */
+    flex-direction: column; /* Coloca os itens em coluna */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário */
+}
+
+/* Estilo dos campos do formulário */
+input, textarea {
+    margin-bottom: 10px; /* Margem inferior entre os campos */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Preenchimento superior e inferior */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servico {
+        width: 100%; /* Largura total em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Exibe os itens em coluna em telas pequenas */
+        align-items: center; /* Alinha os itens no centro */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margem vertical entre os itens */
+        width: 100%; /* Largura*/
+        text-align: center; /*Texto centralizado */
+    }
+
+    nav > ul >li > a {
+        background-color: #0056b3; /* Background links cor */
+        display: inline-block; /* Links em linha */
+        width: 100%; /* Largura */
+    }
+}
